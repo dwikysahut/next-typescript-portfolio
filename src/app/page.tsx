@@ -4,7 +4,7 @@ import { Component } from 'react';
 
 export default function Home() {
 
-
+console.log('homeh')
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
