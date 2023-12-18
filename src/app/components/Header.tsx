@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 import { FaRegWindowRestore, FaRegWindowMinimize } from "react-icons/fa";
@@ -12,7 +14,13 @@ export default function Header() {
       <div className='flex flex-1 items-center gap-8 justify-end mr-4'>
         <FaRegWindowMinimize size={15} />
         <FaRegWindowRestore size={15} />
-        <IoMdClose size={20} />
+        <button onClick={() => {
+          window.open("", "_blank", "");
+          window.close();
+        }}>
+          <IoMdClose size={20} />
+
+        </button>
       </div>
     </div>
 
